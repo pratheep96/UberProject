@@ -17,23 +17,36 @@ end
 
 execute 'python-pip' do
   command 'pip install Flask==0.10.1'
-  command 'pip install Jinja2==2.7.3'
-  command 'pip install MarkupSafe==0.23'
-  command 'pip install Werkzeug==0.9.6'
-  command 'pip install: Gnureadline==6.3.3'
-  command 'pip install: Itsdangerous==0.24'
-  command 'pip install: Rauth==0.7.0'
-  command 'pip install: Requests==2.3.0'
-  command 'pip install: Wsgiref==0.1.2'
 end
 
+execute 'python-pip' do
+  command 'pip install Jinja2==2.7.3'
+end
 
-  # install: Flask==0.10.1
-  # install: Jinja2==2.7.3
-  # install: MarkupSafe==0.23
-  # install: Werkzeug==0.9.6
-  # install: Gnureadline==6.3.3
-  # install: Itsdangerous==0.24
-  # install: Rauth==0.7.0
-  # install: Requests==2.3.0
-  # install: Wsgiref==0.1.2
+execute 'python-pip' do
+  command 'pip install MarkupSafe==0.23'
+end
+
+execute 'python-pip' do
+  command 'pip install Werkzeug==0.9.6'
+end
+
+execute 'python-pip' do
+  command 'pip install Gnureadline==6.3.3'
+end
+
+execute 'python-pip' do
+  command 'pip install Itsdangerous==0.24'
+end
+
+execute 'python-pip' do
+  command 'pip install Rauth==0.7.0'
+end
+
+execute 'python-pip' do
+  command 'pip install Requests==2.3.0'
+end
+
+execute 'python-pip' do
+  command 'pip install Wsgiref==0.1.2'
+end
