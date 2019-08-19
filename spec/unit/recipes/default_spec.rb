@@ -17,43 +17,15 @@ describe 'python_uber::default' do
     end
 
     it 'should install plugins' do
-      expect(chef_run).to run_execute 'pip install flask=0.10.1'
-    end
-
-    it 'should install plugins' do
+      expect(chef_run).to run_execute 'pip install Flask==0.10.1'
       expect(chef_run).to run_execute 'pip install Jinja2==2.7.3'
-    end
-
-    it 'should install plugins' do
-       expect(chef_run).to run_execute 'pip install MarkupSafe==0.23'#
-    end
-
-    it 'should install plugins' do
+      expect(chef_run).to run_execute 'pip install MarkupSafe==0.23'
       expect(chef_run).to run_execute 'pip install Werkzeug==0.9.6'
-    end
-
-    it 'should install plugins' do
-      expect(chef_run).to run_execute 'pip install Werkzeug==0.9.6'
-    end
-
-    it 'should install plugins' do
-      expect(chef_run).to run_execute 'pip install: Gnureadline==6.3.3'
-    end
-
-    it 'should install plugins' do
-      expect(chef_run).to run_execute 'pip install: Itsdangerous==0.24'
-    end
-
-    it 'should install plugins' do
-      expect(chef_run).to run_execute 'pip install: Rauth==0.7.0'
-    end
-
-    it 'should install plugins' do
-      expect(chef_run).to run_execute 'pip install: Requests==2.3.0'
-    end
-
-    it 'should install plugins' do
-      expect(chef_run).to run_execute 'pip install: Wsgiref==0.1.2'
+      expect(chef_run).to run_execute 'pip install Gnureadline==6.3.3'
+      expect(chef_run).to run_execute 'pip install Itsdangerous==0.24'
+      expect(chef_run).to run_execute 'pip install Rauth==0.7.0'
+      expect(chef_run).to run_execute 'pip install Requests==2.3.0'
+      expect(chef_run).to run_execute 'pip install Wsgiref==0.1.2'
     end
 
   end
