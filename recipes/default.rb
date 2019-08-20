@@ -24,6 +24,14 @@ execute 'python-pip' do
 end
 
 execute 'python-pip' do
+  command 'pip install flask_sslify==0.1.4'
+end
+
+execute 'python-pip' do
+  command 'pip install gunicorn==18.0'
+end
+
+execute 'python-pip' do
   command 'pip install Jinja2==2.7.3'
 end
 

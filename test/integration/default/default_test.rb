@@ -14,6 +14,16 @@ describe pip('Flask') do
   its('version') { should eq '0.10.1' }
 end
 
+describe pip('flask_sslify') do
+  it {should be_installed }
+  its('version') {should eq '0.1.4'}
+end
+
+describe pip('gunicorn') do
+  it {should be_installed }
+  its('version') {should eq '18.0'}
+end
+
 describe pip('Jinja2') do
   it { should be_installed }
   its('version') { should eq '2.7.3' }
