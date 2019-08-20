@@ -24,7 +24,7 @@ execute 'python-pip' do
 end
 
 execute 'python-pip' do
-  command 'pip install flask_sslify==0.1.4'
+  command 'pip install flask-sslify==0.1.4'
 end
 
 execute 'python-pip' do
